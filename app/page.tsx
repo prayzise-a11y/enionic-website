@@ -703,11 +703,7 @@ export default function Home() {
       <section className="relative flex min-h-screen items-center overflow-hidden">
         <motion.div
           className="absolute inset-0"
-          initial={
-            prefersReducedMotion
-              ? false
-              : { scale: 1.08, opacity: 0 }
-          }
+          initial={false}
           animate={{ scale: 1, opacity: 1 }}
           transition={{
             duration: 2.2,
@@ -731,11 +727,7 @@ export default function Home() {
         <div className="relative z-10 mx-auto w-full max-w-[1500px] px-8 lg:px-14">
           <div className="max-w-4xl">
             <motion.p
-              initial={
-                prefersReducedMotion
-                  ? false
-                  : { opacity: 0, y: 20 }
-              }
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 0.8,
@@ -747,11 +739,7 @@ export default function Home() {
             </motion.p>
 
             <motion.h1
-              initial={
-                prefersReducedMotion
-                  ? false
-                  : { opacity: 0, y: 45 }
-              }
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 1,
@@ -768,11 +756,7 @@ export default function Home() {
             </motion.h1>
 
             <motion.div
-              initial={
-                prefersReducedMotion
-                  ? false
-                  : { opacity: 0, y: 20 }
-              }
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 0.8,
@@ -890,7 +874,7 @@ export default function Home() {
 
         {!prefersReducedMotion && (
           <motion.div
-            initial={{ x: "-100%" }}
+            initial={false}
             whileInView={{ x: "100%" }}
             viewport={{ once: false }}
             transition={{
@@ -1032,7 +1016,7 @@ export default function Home() {
         <div className="relative z-10 mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
           <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <motion.div
-              initial={{ opacity: 0, x: -40 }}
+              initial={false}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.08 }}
               transition={{
@@ -1083,7 +1067,7 @@ export default function Home() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.94 }}
+              initial={false}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, amount: 0.18 }}
               transition={{
@@ -1178,7 +1162,7 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{
@@ -1302,9 +1286,9 @@ export default function Home() {
 
   <div className="relative z-10 mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
     <motion.div
-      initial={{ opacity: 0, y: 35 }}
+      initial={false}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.08}}
       transition={{
         duration: 0.8,
         ease: [0.22, 1, 0.36, 1],
@@ -1793,7 +1777,7 @@ function TeamMember({
 
   return (
     <motion.article
-      initial={{ opacity: 0, y: 45 }}
+      initial={false}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.08 }}
       transition={{
@@ -2378,10 +2362,7 @@ function ActivityPanel({
         <AnimatePresence mode="wait">
           <motion.div
             key={selected.id}
-            initial={{
-              opacity: 0,
-              y: 15,
-            }}
+            initial={false}
             animate={{
               opacity: 1,
               y: 0,
@@ -2482,9 +2463,9 @@ function IndustryCard({
       type="button"
       onClick={onClick}
       aria-pressed={active}
-      initial={{ opacity: 0, y: 40 }}
+      initial={false}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.08}}
       transition={{
         duration: 0.75,
         ease: [0.22, 1, 0.36, 1],
@@ -2859,11 +2840,7 @@ function IndustryDetail({
 
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        y: 25,
-        scale: 0.99,
-      }}
+      initial={false}
       animate={{
         opacity: 1,
         y: 0,
@@ -2970,10 +2947,7 @@ function AboutPrinciple({
 
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        x: 35,
-      }}
+      initial={false}
       whileInView={{
         opacity: 1,
         x: 0,
@@ -3066,10 +3040,7 @@ function EnionicEcosystem() {
 
         {/* MANUFACTURING */}
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
+          initial={false}
           whileInView={{
             opacity: 1,
             y: 0,
@@ -3108,10 +3079,7 @@ function EnionicEcosystem() {
 
         {/* DIGITALIZATION */}
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
+          initial={false}
           whileInView={{
             opacity: 1,
             y: 0,
@@ -3151,10 +3119,7 @@ function EnionicEcosystem() {
 
         {/* COMMERCIAL INTELLIGENCE */}
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
+          initial={false}
           whileInView={{
             opacity: 1,
             y: 0,
